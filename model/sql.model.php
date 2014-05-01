@@ -50,7 +50,7 @@
 			
 			// I need to get the headers first
 			$this->get_sql_headers($this->_database_obj);
-			$query = "SELECT * FROM " . $this->_database_obj->table . " WHERE host='" . $this->_database_obj->hostname . "'" . "AND uri='" . $this->_router_obj->uri . "'";
+			$query = "SELECT * FROM " . $this->_database_obj->table . " WHERE host='" . $this->_router_obj->http_host . "'" . "AND uri='" . $this->_router_obj->uri . "'";
 			$result = $this->_database_obj->mysqli->query($query) or trigger_error($this->_database_obj->mysqli->error);
 
 			// I pass all the values from the database to the array

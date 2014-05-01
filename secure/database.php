@@ -18,6 +18,7 @@
 			$this->dbname = $_config_obj->config_dbname;
 			$this->table = $_config_obj->config_table;
 
+
 			$this->mysqli = new mysqli($this->hostname, $this->username, $this->password) OR DIE ('Unable to connect to database! Please try again later.');
 			$this->mysqli->set_charset("utf8");  // on ec2 the charset was latin
 			//$this->mysqli->select_db($this->dbname); //this should be out of here on the model
