@@ -8,6 +8,7 @@
 		public $content;
 		public $content_keys;
 		public $path;
+		public $frontend_path;
 		public $head;
 		public $body;
 		public $new_inside_each = array();
@@ -22,6 +23,7 @@
 
 			$this->content = $content;
 			$this->path = $_secure_config_obj->path;
+			$this->frontend_path = $_secure_config_obj->frontend_path;
 			$this->content_keys = array_keys($content);
 
 		}
@@ -111,7 +113,7 @@
 			$this->head = file_get_contents($this->path . 'templates/head.php');
 			
 			// path is the first to replace
-			$this->head = str_replace('{{@path}}', $this->path, $this->head);
+			$this->head = str_replace('{{@path}}', $this->frontend_path, $this->head);
 
 			// I replace all the moustache variables
 			foreach ($this->content_keys as $key)
@@ -125,7 +127,7 @@
 
 			
 			// path is the first to replace
-			$this->body = str_replace('{{@path}}', $this->path, $this->body);
+			$this->body = str_replace('{{@path}}', $this->frontend_path, $this->body);
 
 			// I replace all the moustache variables
 			foreach ($this->content_keys as $key)
