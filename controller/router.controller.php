@@ -16,10 +16,10 @@
 			$this->uri = $_SERVER['REQUEST_URI'];
 			$this->pag_parameter = $_GET['pag'];
 			
-			echo "environment variables : <br>";
-			echo "host: " . $this->http_host . "<br>";
-			echo "uri: " . $this->uri . "<br>";
-			echo "parameter_pag: " . $this->pag_parameter . "<br>";
+			// echo "environment variables : <br>";
+			// echo "host: " . $this->http_host . "<br>";
+			// echo "uri: " . $this->uri . "<br>";
+			// echo "parameter_pag: " . $this->pag_parameter . "<br>";
 			//echo 'router construct, the uri is: ' . $this->uri . '<br>';
 
 		}
