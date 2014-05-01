@@ -1,0 +1,118 @@
+/* CSS declarations go here */
+/* dark-blue #3c636a */
+/* middle-blue #3d868f */
+/* light-blue #e7f0f5 */
+
+
+/* pasteles */
+/* azul: #2B7DB2*/
+/* light-red: #FF7170 */
+/* light-ocre: #CCCB31 */
+/* light-blue: #57BCFF */
+/* dark-ocre: #B2B134 */
+
+/*red-balsamic-hard: #750209
+red-balsamic-soft: #8a272c
+blue-balsamic: #0c5c9b
+grey-balsamic-for-backgrounds: #f5f5f5
+grey-balsamic-for-borders-and-lines: #dedede*/
+
+
+html{
+
+	height: 100%;
+	margin: 0;
+}
+
+body{
+
+	/*background-color:#3c858e;
+*/}
+
+
+.undertitle {
+	margin-bottom: 40px;
+	font-size: 24px;
+	color: black;
+
+}
+
+.logo {
+/*	margin-left: -40px;
+	margin-bottom: 50px;*/
+
+
+}
+
+#kryptonite-panel-heading{
+/*
+	background-color: #e9f4fa;*/
+}
+
+#navbar-kryptonite{
+/*	background-color: #3c636a;	*/
+/*	background-color: #750209;*/
+	border-size: 2 2 2 2px;
+	border-color: black;
+}
+
+#domain-title{
+/*	color: #e7f0f5;*/
+}
+
+
+a.white-link:active {
+	color: black;
+
+
+}
+a.white-link:visited {
+	color: black;
+
+
+}
+
+
+ul.nav a:hover { color: #8a272c !important; }
+
+
+#in-navbar-title {
+
+	width: 150px;
+}
+
+.logo {
+
+	float:left;
+	margin-right: 40px;
+}
+.menu {
+	float: left;
+	margin-top: 19px;
+
+}
+
+.float-right{
+
+	float: right;
+}
+
+.float-left{
+
+	float: left;
+}
+
+.justify {
+
+	text-align: justify;
+}
+
+.ad {
+
+	margin: 5px;
+}
+
+
+
+
+

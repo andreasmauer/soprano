@@ -1,0 +1,25 @@
+#encontrado en http://www.klauskomenda.com/code/rewrite-rules-practical-examples/
+
+
+
+RewriteEngine on
+RewriteRule ^(.*).php$ index.php?pag=$1 [QSA]
+
+
+
+#Explanation:
+
+#^: pattern should match from the beginning of the string
+#(: start of subpattern
+#.: one or more of…
+#*: …any character
+#): end of subpattern
+#.php: followed by “.php”
+#$: end of string
+# [QSA] (Query String Append) means that additional parameters in the querystring will be passed on as well
+
+#### POR HACER ###
+# la versión no-www todavía no redirige a la www
+# index.php todavía no redirige a /
+# http://www.madridlondres.com/includes/  me devuelve una lista con todos los php
+# http://deckerix.com/blog/ocultar-el-contenido-de-los-directorios-apache/ aquí esta la solución del último punto
