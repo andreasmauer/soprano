@@ -24,10 +24,92 @@ html{
 	margin: 0;
 }
 
-body{
+body {
 
-	/*background-color:#3c858e;
-*/}
+	background-color:#3c858e;
+}
+
+
+.title-kryptonite {
+	margin-left: 10px;
+/*	background-color: #3c858e;*/
+}
+
+.page-header-kryptonite {
+
+
+}
+
+.main-container-kryptonite {
+
+	margin-bottom: 20px;
+}
+
+.sidebar-ad-kryptonite {
+
+ background-color: white; 	
+ margin-left: 10px;	
+
+ border: 2px solid black;
+ border-right: 0px ;
+
+   /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 5px 0px 0px 0px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 5px 0px 0px 0px; 
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 5px 0px 0px 0px; /* top left, top right, bottom right, bottom left */
+}
+
+
+.false-navi-bar-kryptonite{
+
+	background-color: white; 
+	border: 1px solid black;
+
+	 border: 2px solid black;
+
+   /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -webkit-border-radius: 5px 0px 0px 0px; 
+
+  /* Firefox 1-3.6 */
+  -moz-border-radius: 5px 0px 0px 0px; 
+  
+  /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+  border-radius: 5px 0px 0px 0px; /* top left, top right, bottom right, bottom left */
+
+
+
+}
+
+.inside-header-kryptonite{
+
+	margin-bottom: -10px;
+	margin-top: 10px;
+
+
+}
+
+
+.main-content-col-kryptonite {
+
+ background-color: white; 	
+ margin-left: 0px;	
+
+ border: 2px solid black;
+ border-top: 0px;
+
+
+ 
+}
+
+#nav-link-kryptonite{
+
+	margin-left: 15px;
+}
+
 
 
 .undertitle {
@@ -42,6 +124,14 @@ body{
 	margin-bottom: 50px;*/
 
 
+}
+
+.footer-kryptonite{
+
+	background-color: white;
+	margin-bottom: 0px;
+padding-left: 150px;
+	border-radius: 0px;
 }
 
 #kryptonite-panel-heading{

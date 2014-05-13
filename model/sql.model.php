@@ -32,10 +32,14 @@
 
 		public function get_sql_headers()
 		{
+
+
 			$query = "SHOW COLUMNS FROM " . $this->_database_obj->table;
 			$nameofcolumns = $this->_database_obj->mysqli->query($query) or trigger_error($this->_database_obj->mysqli->error);
 
 			while ($row = $nameofcolumns->fetch_array(MYSQLI_ASSOC))
+
+
 			{
 				array_push($this->column_headers, $row['Field']);
 			}
@@ -50,6 +54,11 @@
 			
 			// I need to get the headers first
 			$this->get_sql_headers($this->_database_obj);
+
+
+			// this way is dangerouse and doesnt prevent injection
+			// it should be replaced for the version in testing that is coded and commented under it
+			
 			$query = "SELECT * FROM " . $this->_database_obj->table . " WHERE host='" . $this->_router_obj->http_host . "'" . "AND uri='" . $this->_router_obj->uri . "'";
 			$result = $this->_database_obj->mysqli->query($query) or trigger_error($this->_database_obj->mysqli->error);
 
@@ -59,6 +68,27 @@
 			{
 				$this->sql_everything_from_uri[$key] = $row[$key];
 			}
+
+			
+
+			// //    ------testing mysqli prevention of injection
+			// // this testing could be use with the new Mysql Native Driver
+			// // the native driver come with php 5.4
+			// // CentOs is on 5.3.3 and I dont feel like upgrading it
+
+			// $query = "SELECT * FROM " . $this->_database_obj->table . " WHERE host='" . $this->_router_obj->http_host . "'" . "AND uri=?";
+			// $stmt = $this->_database_obj->mysqli->prepare("SELECT * FROM " . $this->_database_obj->table . " WHERE host='" . $this->_router_obj->http_host . "'" . "AND uri=?");
+			// $stmt->bind_param('s', $uri);
+			// $stmt->execute();
+			// $result = $stmt->get_result();
+
+			// $row = $result->fetch_array(MYSQLI_ASSOC);
+			// foreach ($this->column_headers as $key)
+			// {
+			// 	$this->sql_everything_from_uri[$key] = $row[$key];
+			// }
+
+			// // --------end of testing
 
 
 			
@@ -111,7 +141,7 @@
 
 
 			}
-
+			//print_r ($this->sql_everything_from_uri);
 			return ($this->sql_everything_from_uri);
 
 		}
