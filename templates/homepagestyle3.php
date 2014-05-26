@@ -9,7 +9,7 @@
             <h1>Proteico.es</h1>
           </div>
           <div class="col-md-8 false-navi-bar-kryptonite">
-            <h2>adsense</h2>
+            <h2>Proteico.es</h2>
           </div>
         
         </div>
