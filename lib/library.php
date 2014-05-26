@@ -14,6 +14,8 @@
 // output: multiarray
 // use in: each moustache 
 
+
+
 	function from_sql_to_multiarray($content)
 	{
 

@@ -1,3 +1,4 @@
 config.php
 .DS\_Store
 sftp
+sftp-config.json
