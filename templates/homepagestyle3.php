@@ -1,5 +1,5 @@
 <body>
-  {{extracss}}a
+  {{extracss}}
     <div class="container main-container-kryptonite">
 
       <div class="page-header-kryptonite">
@@ -17,7 +17,7 @@
 
       <div class="row main-sidebar-and-body-kryptonite">
         <div class="col-md-3 sidebar-ad-kryptonite">
-          <img src="https://storage.googleapis.com/support-kms-prod/SNP_2922342_en_v0"></img>
+          {{adsense-1}}
         </div>
         <div class="col-md-8 main-content-col-kryptonite">
           <!-- .col-md-8 -->
