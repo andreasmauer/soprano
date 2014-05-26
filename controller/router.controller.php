@@ -20,6 +20,8 @@
 			echo "host: " . $this->http_host . "<br>";
 			echo "uri: " . $this->uri . "<br>";
 			echo "parameter_pag: " . $this->pag_parameter . "<br>";
+			echo "aaa";
+
 
 
 		}
